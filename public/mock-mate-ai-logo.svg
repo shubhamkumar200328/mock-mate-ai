@@ -1,0 +1,48 @@
+<svg width="420" height="420" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Speech Bubble -->
+  <path d="M90 60h240a40 40 0 0 1 40 40v150a40 40 0 0 1-40 40H200l-50 40v-40H90a40 40 0 0 1-40-40V100a40 40 0 0 1 40-40z"
+        fill="url(#bubbleGrad)"/>
+
+  <!-- Robot Head -->
+  <circle cx="210" cy="165" r="70" fill="#FFFFFF"/>
+  <circle cx="210" cy="165" r="55" fill="url(#faceGrad)"/>
+
+  <!-- Eyes -->
+  <circle cx="190" cy="160" r="6" fill="#FFFFFF"/>
+  <circle cx="230" cy="160" r="6" fill="#FFFFFF"/>
+
+  <!-- Smile -->
+  <path d="M190 185q20 12 40 0" stroke="#FFFFFF" stroke-width="4" fill="none"/>
+
+  <!-- Headset -->
+  <rect x="135" y="145" width="15" height="40" rx="7" fill="#1E3A8A"/>
+  <rect x="270" y="145" width="15" height="40" rx="7" fill="#1E3A8A"/>
+
+  <!-- Mic -->
+  <path d="M260 195q20 5 20 25" stroke="#1E3A8A" stroke-width="4" fill="none"/>
+
+  <!-- Lightbulb -->
+  <circle cx="210" cy="60" r="16" fill="#FACC15"/>
+  <rect x="204" y="75" width="12" height="10" rx="3" fill="#92400E"/>
+
+  <!-- Text -->
+  <text x="210" y="385" text-anchor="middle"
+        font-family="Inter, Arial, sans-serif"
+        font-size="40"
+        font-weight="700">
+    <tspan fill="#1E3A8A">Mock-Mate</tspan>
+    <tspan fill="#8B5CF6">-AI</tspan>
+  </text>
+</svg>
