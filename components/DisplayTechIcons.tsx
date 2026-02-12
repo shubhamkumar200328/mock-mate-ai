@@ -1,4 +1,3 @@
-import React from 'react';
 import { cn, getTechLogos } from '@/lib/utils';
 import Image from 'next/image';
 
