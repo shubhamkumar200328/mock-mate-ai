@@ -30,6 +30,7 @@ const FormField = <T extends FieldValues>({
         <FormLabel className="label">{label}</FormLabel>
         <FormControl>
           <Input
+            id={name}
             className="input"
             placeholder={placeholder}
             type={type}

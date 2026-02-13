@@ -109,6 +109,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
 
         <Form {...form}>
           <form
+            suppressHydrationWarning
             onSubmit={form.handleSubmit(onSubmit)}
             className="w-full space-y-6 mt-4 form"
           >
