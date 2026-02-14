@@ -120,6 +120,7 @@ const InterviewForm = ({ userId }: InterviewFormProps) => {
                 >
                   <option value="Technical">Technical</option>
                   <option value="Behavioral">Behavioral</option>
+                  <option value="Behavioral">Cultural</option>
                   <option value="Mixed">Mixed</option>
                 </select>
               </FormControl>
