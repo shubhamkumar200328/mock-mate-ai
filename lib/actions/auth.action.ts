@@ -108,7 +108,7 @@ export async function getCurrentUser(): Promise<User | null> {
   if (!sessionCookie) return null;
 
   try {
-    const decodedClaims = await auth.verifySessionCookie(sessionCookie, true);
+    const decodedClaims = await auth.verifySessionCookie(sessionCookie, false);
 
     // get user info from db
     const userRecord = await db
@@ -122,7 +122,7 @@ export async function getCurrentUser(): Promise<User | null> {
       id: userRecord.id,
     } as User;
   } catch (error) {
-    console.log(error);
+    console.error('Session verification error:', error);
 
     // Invalid or expired session
     return null;
